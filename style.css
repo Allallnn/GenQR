@@ -2,6 +2,8 @@
 
 :root{
     --neutral-1: #0D0a0F;
+    --primary-main: #4B296B;
+    --white: #FFFFFF;
 }
 
 
@@ -11,6 +13,19 @@ body {
 
 a{
     color: var(--neutral-1);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#nav-btn {
+    background-color: var(--primary-main);
+    /* padding: 30px 8px; */
+    width: 160px;
+    height: 52px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
     font-weight: 500;
     font-size: 20px;
 }
