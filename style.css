@@ -35,6 +35,7 @@ a {
   align-items: center;
 }
 
+
 .carousel h1 {
   font-size: 68px;
   font-weight: 800;
@@ -54,8 +55,37 @@ a {
   font-weight: 500;
   font-size: 20px;
 }
+.carousel {
+  position: relative;
+}
+.carousel-indicators {
+  position: absolute;
+  top: 200px;
+
+}
+header section {
+  padding: 30px 0;
+}
+
+.get-started-btn {
+    margin-top: 50px;
+}
+
+.carousel {
+    position: relative;
+} 
+
+.carousel-indicators {
+    position: absolute;
+    top: 500px;
+}
+
+header section {
+    padding: 30px 0;
+}
 
 /* task: finish carousel, make it responsive */
+
 @media (max-width: 750px) {
   .mobile-nav-logo img {
     width: 120px;
@@ -81,15 +111,38 @@ a {
 
   .carousel-item h1 {
     font-size: 28px;
-    text-align: left;
+
   }
   .carousel-item p {
     font-size: 12px;
   }
-  #carousel-btn {
+  #get-started-btn {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+  }
+   .slider-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* slider img */
+  .slider-img img {
+    max-width: 240px;
+  }
+  .carousel button {
+    width: 240px;
+    height: 44px;
+    border-radius: 36px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .carousel-indicators {
+    position: absolute;
+    top: 470px;
+  }
+  header section {
+    padding: 6px 0;
   }
 }
 
@@ -106,3 +159,5 @@ a {
   }
   
 }
+
+/* Task: finish "how it wortks" and the next 2 small parts */
