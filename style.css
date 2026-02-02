@@ -8,6 +8,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -20,7 +21,6 @@ a {
   background-color: var(--primary-main);
   width: 160px;
   height: 52px;
-  outline: none;
   border: none;
   border-radius: 8px;
   color: var(--white);
@@ -33,10 +33,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
-/* ===============================
-   CAROUSEL
-================================ */
 
 .carousel h1 {
   font-size: 68px;
@@ -52,7 +48,6 @@ a {
   background-color: var(--primary-main);
   width: 240px;
   height: 52px;
-  outline: none;
   border: none;
   border-radius: 8px;
   color: var(--white);
@@ -77,33 +72,16 @@ header section {
   margin-top: 50px;
 }
 
-#Section-2,
-#Section-3 {
-  border-bottom: #4b296b solid 1px;
-
-}
-/* Main */
-main {
-
-
-}
-/* Section 1 */
-
 #Section-1 {
-  background-color: #DBD4E1;
-  padding: 100px 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: #dbd4e1;
+  padding: 100px 0;
   text-align: center;
-  font-family: "Manrope", sans-serif;
   height: 732px;
 }
 
 #Section-1 h2 {
   font-size: 40px;
   font-weight: 700;
-  font-family: "Manrope", sans-serif;
   color: black;
 }
 
@@ -132,37 +110,40 @@ main {
   font-weight: 700;
   color: var(--primary-main);
   margin-bottom: 16px;
-  font-family: "Manrope", sans-serif;
 }
 
 #Section-1 #div-2 p:last-child {
   font-size: 19px;
-  font-family: 500;
   line-height: 1.8;
   color: black;
-  font-family: "Manrope", sans-serif;
 }
 
 #div-3 img {
   max-width: 100%;
 }
 
-/* Section 2 */
-
 #Section-2 {
-  padding: 120px 8%;
+  padding: 120px 0 0;
+}
+
+#Section-2 .container {
+  max-width: 1320px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 100px;
+  border-bottom: 1px solid #4b296b;
+  padding-bottom: 120px;
 }
 
 #Section-2 img {
-width: 520px;
+  max-width: 520px;
+  width: 100%;
 }
 
 #Section-2 div {
-  width: 520px;
+  max-width: 520px;
 }
 
 #Section-2 p:first-child {
@@ -170,7 +151,6 @@ width: 520px;
   font-weight: 700;
   color: var(--primary-main);
   margin-bottom: 16px;
-  font-family: "Manrope", sans-serif;
 }
 
 #Section-2 p:last-child {
@@ -178,26 +158,31 @@ width: 520px;
   font-weight: 500;
   line-height: 1.8;
   color: black;
-  font-family: "Manrope", sans-serif;
 }
 
-/* Section 3 */
-
 #Section-3 {
-  padding: 120px 8%;
+  padding: 120px 0 0;
+}
+
+#Section-3 .d-flex {
+  max-width: 1320px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid #4b296b;
+  padding-bottom: 120px;
 }
 
 #Section-3 img {
-width: 520px;
+  max-width: 520px;
+  width: 100%;
 }
 
 #Section-3 div {
-  width: 520px;
+  max-width: 520px;
 }
 
 #Section-3 p:first-child {
@@ -205,7 +190,6 @@ width: 520px;
   font-weight: 700;
   color: var(--primary-main);
   margin-bottom: 16px;
-  font-family: "Manrope", sans-serif;
 }
 
 #Section-3 p:last-child {
@@ -214,19 +198,9 @@ width: 520px;
   font-weight: 500;
   line-height: 1.8;
   color: black;
-  font-family: "Manrope", sans-serif;
 }
 
-
-/* ===============================
-   YOUR ORIGINAL MEDIA QUERIES
-================================ */
-
 @media (max-width: 750px) {
-  .mobile-nav-logo img {
-    width: 120px;
-  }
-
   .offcanvas-main {
     max-width: 55%;
   }
@@ -281,24 +255,10 @@ width: 520px;
     padding: 6px 0;
   }
 
-
-main {
-
-}
-
-  #Section-2,
-  #Section-3 {
-
-    border: none;
-    margin: 0;
-  }
-
-/* Section 1 mobile */
-
   #Section-1 {
     height: auto;
     padding: 60px 5%;
-    text-align: center;
+    background-color: white;
   }
 
   #Section-1 h2 {
@@ -311,9 +271,7 @@ main {
 
   #div-1 {
     flex-direction: column;
-    margin-top: 40px;
     gap: 40px;
-    text-align: center;
   }
 
   #div-2 {
@@ -321,67 +279,42 @@ main {
     text-align: center;
   }
 
-  #div-2 p:first-child {
+  #Section-1 #div-2 p:first-child {
     font-size: 18px;
   }
 
-#Section-1  #div-2 p:last-child {
+  #Section-1 #div-2 p:last-child {
     font-size: 12px;
     text-align: center;
-    margin: none;
   }
 
-  /* Section 2 - Mobile */
-  #Section-2 {
+  #Section-2 .container,
+  #Section-3 .d-flex {
     flex-direction: column;
-    padding: 60px 5%;
     gap: 40px;
     text-align: center;
+    border: none;
+    padding-bottom: 0;
   }
 
-  #Section-2 img {
-    max-width: 280px;
-  }
-
-  #Section-2 div {
-    max-width: 100%;
-  }
-
-  #Section-2 p:first-child {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  #Section-2 p:last-child {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  /* Section 3 - Mobile */
-  #Section-3 {
-    flex-direction: column;
-    padding: 60px 5%;
-    gap: 40px;
-    text-align: center;
-  }
-
+  #Section-2 img,
   #Section-3 img {
     max-width: 280px;
   }
 
-  #Section-3 div {
-    max-width: 100%;
-  }
-
+  #Section-2 p:first-child,
   #Section-3 p:first-child {
     font-size: 20px;
-    text-align: center;
   }
 
+  #Section-2 p:last-child,
   #Section-3 p:last-child {
     font-size: 14px;
     text-align: center;
+    width: 100%;
   }
+}
+
 @media (max-width: 890px) {
   .offcanvas-body {
     flex-direction: column;
@@ -396,4 +329,3 @@ main {
     margin-top: 20px;
   }
 }
-
