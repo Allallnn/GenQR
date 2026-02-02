@@ -10,6 +10,9 @@ body {
   font-family: "Manrope", sans-serif;
   overflow-x: hidden;
 }
+p {
+    font-family: "Manrope", sans-serif;
+}
 
 a {
   color: var(--neutral-1);
@@ -200,6 +203,90 @@ header section {
   color: black;
 }
 
+/* Section 4 */
+#Section-4 {
+  background-color: #4b296b;
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: center;
+padding: 3rem;
+gap: 5rem;
+}
+
+#Section-4 h2{
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#Section-4 p{
+  color: white;
+  font-size: 20px;
+}
+
+#Section-4-div {
+  display: flex;
+  justify-content: center;
+
+}
+
+#Section-4-item {
+width: 350px;
+}
+
+#Section-4-item p{
+font-size: 16px;
+font-weight: 400;
+padding-top: 2rem;
+}
+/* Section 5 */
+
+#Section-5 {
+  background-color: #FAF8FC;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#Section-5 h2{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#Section-5-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Section-5-text{
+width: 550px;
+}
+#Section-5-text h5{
+color: var(--primary-main);
+text-align: start;
+font-size: 28px;
+font-weight: 700;
+}
+
+#Section-5-text p{
+font-weight: 500;
+font-size: 20px;
+text-align: start;
+}
+#Section-5 button {
+  background-color: var(--primary-main);
+  color: white;
+  font-size: 20px;
+  border-radius: 1rem;
+  width: 240px;
+  height: 52px;
+  border: none;
+  margin-left: -20rem;
+}
+#Section-5-img{
+  
+}
 @media (max-width: 750px) {
   .offcanvas-main {
     max-width: 55%;
@@ -328,4 +415,49 @@ header section {
   .offcanvas-body button {
     margin-top: 20px;
   }
+
+  /* Section 4 */
+  #Section-4-div {
+    flex-direction: column;
+  }
+
+  /* Section 5 */
+
+  #Section-5 h2{
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#Section-5 p{
+  font-size: 12px;
+}
+  #Section-5 button{
+    display: none;
+  }
+  #Section-5-div {
+  display: flex;
+  flex-direction: column-reverse;
+justify-content: center;
+}
+#Section-5 img {
+width: 200px;
+height: 220px;
+margin-bottom: 1rem;
+}
+#Section-5-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 366px;
+
+}
+#Section-5-text h5{
+text-align: center;
+}
+
+#Section-5-text p{
+text-align: center;
+width: 366px;
+}
+
 }
