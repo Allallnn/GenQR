@@ -248,6 +248,13 @@ padding-top: 2rem;
   flex-direction: column;
   text-align: center;
 }
+#Section-5 #p-1{
+font-weight: 500;
+font-family: serif;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    color: black;
+}
 
 #Section-5 h2{
   font-size: 40px;
@@ -261,6 +268,9 @@ padding-top: 2rem;
 }
 #Section-5-text{
 width: 550px;
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    color: black;
 }
 #Section-5-text h5{
 color: var(--primary-main);
@@ -273,6 +283,7 @@ font-weight: 700;
 font-weight: 500;
 font-size: 20px;
 text-align: start;
+  color: black;
 }
 #Section-5 button {
   background-color: var(--primary-main);
@@ -287,6 +298,73 @@ text-align: start;
 #Section-5-img{
   
 }
+
+
+/* Section 6 */
+
+#Section-6 {
+  background-color: var(--primary-main);
+}
+#Section-6 h2, p{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#Section-6 h2{
+    font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  padding-bottom: 2rem;
+}
+
+#Section-6 #p-1{
+    font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+margin-bottom: 4rem;
+}
+
+
+#Section-6 .card h5{
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--primary-main);
+}
+
+#Section-6 .card h6{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-main);
+}
+
+#Section-6 .card p{
+  color: black;
+  font-size: 11px;
+  width: 348px;
+}
+
+#Section-6 .card {
+/* min-width: 384px; */
+height: 624px;
+}
+
+#Section-6 button {
+border: 1px solid var(--primary-main);
+padding: 1rem;
+background-color: white;
+border-radius: 1rem;
+margin-bottom: 2rem;
+}
+#Section-6 .btn-1 {
+
+}
+
+#Section-6 #img-div img {
+  width: 32px;
+  height: 32px;
+}
+
 @media (max-width: 750px) {
   .offcanvas-main {
     max-width: 55%;
@@ -417,9 +495,38 @@ text-align: start;
   }
 
   /* Section 4 */
+  #Section-4 {
+    display: flex;
+    justify-content: center;
+
+  }
   #Section-4-div {
     flex-direction: column;
+
   }
+
+#Section-4 h2{
+  font-size: 24px;
+
+}
+
+#Section-4 p{
+  font-size: 12px;
+}
+
+#Section-4-div {
+  display: flex;
+  justify-content: center;
+
+}
+
+#Section-4-item {
+width: 240px;
+}
+
+#Section-4-item p{
+font-size: 12px;
+}
 
   /* Section 5 */
 
@@ -439,6 +546,7 @@ text-align: start;
   flex-direction: column-reverse;
 justify-content: center;
 }
+
 #Section-5 img {
 width: 200px;
 height: 220px;
@@ -458,6 +566,32 @@ text-align: center;
 #Section-5-text p{
 text-align: center;
 width: 366px;
+}
+
+/* Section 6 */
+
+#Section-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Section-6 h2{
+  font-size: 24px;
+  padding-bottom: 1rem;
+}
+
+#Section-6 #p-1{
+  font-size: 12px;
+margin-bottom: 4rem;
+}
+
+#Section-6 .card {
+  width: 220px;
+}
+
+#Section-6 .card p{
+font-size: 6.87px;
+word-wrap: break-word;
 }
 
 }
