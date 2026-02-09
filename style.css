@@ -37,17 +37,17 @@ a {
   align-items: center;
 }
 
-.carousel h1 {
+header .carousel h1 {
   font-size: 68px;
   font-weight: 800;
 }
 
-.carousel p {
+header .carousel p {
   font-size: 20px;
   font-weight: 500;
 }
 
-.carousel button {
+header .carousel button {
   background-color: var(--primary-main);
   width: 240px;
   height: 52px;
@@ -58,11 +58,11 @@ a {
   font-size: 20px;
 }
 
-.carousel {
+header .carousel {
   position: relative;
 }
 
-.carousel-indicators {
+header .carousel-indicators {
   position: absolute;
   top: 500px;
 }
@@ -355,11 +355,14 @@ header section {
   height: 32px;
 }
 
-/* Section 7 - FIXED */
+/* Section 7 */
 #Section-7 {
   background-color: #faf8fc;
   padding: 6rem 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #Section-7 h2 {
@@ -385,7 +388,7 @@ header section {
 
 #Section-7 .carousel {
   position: relative;
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -395,10 +398,8 @@ header section {
 }
 
 #Section-7 .carousel-item {
-  padding: 3rem 2rem;
-  height: auto;
-  min-height: 300px;
-  display: flex;
+  margin: 3rem 2rem;
+  height: 288px;
   align-items: center;
   justify-content: center;
 }
@@ -410,50 +411,37 @@ header section {
 }
 
 #Section-7 img {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 #Section-7 .carousel-caption h5 {
   font-size: 20px;
   font-weight: 700;
+  width: 128px;
   color: var(--primary-main);
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-#Section-7 .carousel-caption p {
+#Section-7 .carousel-item h5 {
+  color: var(--primary-main);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#Section-7 .carousel-item p {
   color: black;
-  font-size: 16px;
-  max-width: 640px;
+  font-size: 20px;
+  width: 692px;
+  font-weight: 500;
   margin: 0 auto;
-  line-height: 1.7;
-  font-weight: 400;
-}
-
-#Section-7 .carousel-control-prev,
-#Section-7 .carousel-control-next {
-  width: 6%;
-  filter: invert(1);
-}
-
-#Section-7 .carousel-control-prev {
-  left: -10%;
 }
 
 #Section-7 .carousel-control-next {
-  right: -10%;
-}
 
-/* Remove the button from Section-7 since it's not in the image */
-#Section-7 button {
-  display: none;
 }
 
 @media (max-width: 750px) {
@@ -589,126 +577,128 @@ header section {
   #Section-4 {
     display: flex;
     justify-content: center;
-
   }
   #Section-4-div {
     flex-direction: column;
-
   }
 
-#Section-4 h2{
-  font-size: 24px;
+  #Section-4 h2 {
+    font-size: 24px;
+  }
 
-}
+  #Section-4 p {
+    font-size: 12px;
+  }
 
-#Section-4 p{
-  font-size: 12px;
-}
+  #Section-4-div {
+    display: flex;
+    justify-content: center;
+  }
 
-#Section-4-div {
-  display: flex;
-  justify-content: center;
+  #Section-4-item {
+    width: 240px;
+  }
 
-}
-
-#Section-4-item {
-width: 240px;
-}
-
-#Section-4-item p{
-font-size: 12px;
-}
+  #Section-4-item p {
+    font-size: 12px;
+  }
 
   /* Section 5 */
 
-  #Section-5 h2{
-  font-size: 24px;
-  font-weight: 800;
-}
+  #Section-5 h2 {
+    font-size: 24px;
+    font-weight: 800;
+  }
 
-#Section-5 p{
-  font-size: 12px;
-}
-  #Section-5 button{
+  #Section-5 p {
+    font-size: 12px;
+  }
+  #Section-5 button {
     display: none;
   }
   #Section-5-div {
-  display: flex;
-  flex-direction: column-reverse;
-justify-content: center;
-}
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 
-#Section-5 img {
-width: 200px;
-height: 220px;
-margin-bottom: 1rem;
-}
-#Section-5-text{
-  display: flex;
-  flex-direction: column;
+  #Section-5 img {
+    width: 200px;
+    height: 220px;
+    margin-bottom: 1rem;
+  }
+  #Section-5-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 366px;
+  }
+  #Section-5-text h5 {
+    text-align: center;
+  }
+
+  #Section-5-text p {
+    text-align: center;
+    width: 366px;
+  }
+
+  /* Section 6 */
+
+  #Section-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #Section-6 h2 {
+    font-size: 24px;
+    padding-bottom: 1rem;
+  }
+
+  #Section-6 #p-1 {
+    font-size: 12px;
+    margin-bottom: 4rem;
+  }
+
+  #Section-6 .card {
+    width: 220px;
+  }
+
+  #Section-6 .card p {
+    font-size: 6.87px;
+    word-wrap: break-word;
+  }
+
+  /* Section 7 */
+  #Section-7 {
+    padding: 3rem 1rem;
+  }
+
+  #Section-7 h2 {
+    font-size: 24px;
+  }
+
+  #Section-7 > p {
+    font-size: 16px;
+  }
+
+  #Section-7 .carousel-caption h5 {
+    font-size: 18px;
+  }
+
+  #Section-7 .carousel-caption p {
+    font-size: 14px;
+    padding: 0 1rem;
+  }
+
+  #Section-7 .carousel-control-prev,
+  #Section-7 .carousel-control-next {
+    display: none;
+  }
+
+  #Section-7 .carousel-item {
+  margin: 3rem 2rem;
+width: ;
+  align-items: center;
   justify-content: center;
-  max-width: 366px;
-
-}
-#Section-5-text h5{
-text-align: center;
-}
-
-#Section-5-text p{
-text-align: center;
-width: 366px;
-}
-
-/* Section 6 */
-
-#Section-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#Section-6 h2{
-  font-size: 24px;
-  padding-bottom: 1rem;
-}
-
-#Section-6 #p-1{
-  font-size: 12px;
-margin-bottom: 4rem;
-}
-
-#Section-6 .card {
-  width: 220px;
-}
-
-#Section-6 .card p{
-font-size: 6.87px;
-word-wrap: break-word;
-}
-
-/* Section 7 responsive styles */
-#Section-7 {
-  padding: 3rem 1rem;
-}
-
-#Section-7 h2 {
-  font-size: 24px;
-}
-
-#Section-7 > p {
-  font-size: 16px;
-}
-
-#Section-7 .carousel-caption h5 {
-  font-size: 18px;
-}
-
-#Section-7 .carousel-caption p {
-  font-size: 14px;
-  padding: 0 1rem;
-}
-
-#Section-7 .carousel-control-prev,
-#Section-7 .carousel-control-next {
-  display: none;
 }
 }
