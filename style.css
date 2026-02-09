@@ -355,11 +355,10 @@ header section {
   height: 32px;
 }
 
-/* Section 6 */
-
+/* Section 7 - FIXED */
 #Section-7 {
   background-color: #faf8fc;
-  padding: 6rem 1rem;
+  padding: 6rem 0;
   text-align: center;
 }
 
@@ -373,12 +372,41 @@ header section {
   font-size: 20px;
   font-weight: 500;
   color: black;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+#Section-7 .testimonial-divider {
+  width: 80px;
+  height: 2px;
+  background-color: var(--primary-main);
+  margin: 20px auto 40px auto;
+  border: none;
+}
+
+#Section-7 .carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#Section-7 .carousel-inner {
+  padding: 0;
+  border-radius: 16px;
 }
 
 #Section-7 .carousel-item {
-  padding: 10rem 0;
-  height: 288px;
+  padding: 3rem 2rem;
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Section-7 .carousel-caption {
+  position: static;
+  padding: 0;
+  color: #000;
 }
 
 #Section-7 img {
@@ -387,40 +415,46 @@ header section {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#Section-7 h5 {
+#Section-7 .carousel-caption h5 {
   font-size: 20px;
   font-weight: 700;
   color: var(--primary-main);
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-#Section-7 .carousel-item p {
+#Section-7 .carousel-caption p {
   color: black;
   font-size: 16px;
   max-width: 640px;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   line-height: 1.7;
+  font-weight: 400;
 }
-
-#Section-7 button {
-  background-color: var(--primary-main);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  width: 200px;
-  height: 52px;
-  font-size: 18px;
-}
-
 
 #Section-7 .carousel-control-prev,
 #Section-7 .carousel-control-next {
   width: 6%;
+  filter: invert(1);
 }
 
+#Section-7 .carousel-control-prev {
+  left: -10%;
+}
+
+#Section-7 .carousel-control-next {
+  right: -10%;
+}
+
+/* Remove the button from Section-7 since it's not in the image */
+#Section-7 button {
+  display: none;
+}
 
 @media (max-width: 750px) {
   .offcanvas-main {
@@ -649,4 +683,32 @@ margin-bottom: 4rem;
 #Section-6 .card p{
 font-size: 6.87px;
 word-wrap: break-word;
+}
+
+/* Section 7 responsive styles */
+#Section-7 {
+  padding: 3rem 1rem;
+}
+
+#Section-7 h2 {
+  font-size: 24px;
+}
+
+#Section-7 > p {
+  font-size: 16px;
+}
+
+#Section-7 .carousel-caption h5 {
+  font-size: 18px;
+}
+
+#Section-7 .carousel-caption p {
+  font-size: 14px;
+  padding: 0 1rem;
+}
+
+#Section-7 .carousel-control-prev,
+#Section-7 .carousel-control-next {
+  display: none;
+}
 }
