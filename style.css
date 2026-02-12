@@ -442,8 +442,18 @@ header section {
 #Section-7 .carousel-control-next {
 
 }
-
+/* Section 8 */
+#Section-8 {
+  background-color: #DBD4E1;
+}
+#Section-8 .accordion {
+  padding: 5rem;
+}
 @media (max-width: 750px) {
+
+  /* Section 1 */
+
+
   .offcanvas-main {
     max-width: 55%;
   }
@@ -600,6 +610,12 @@ header section {
 
   #Section-4-item p {
     font-size: 12px;
+    padding-bottom: 2rem;
+  }
+
+  #Section-4-item img {
+    width: 48px;
+    height: 48px;
   }
 
   /* Section 5 */
