@@ -356,103 +356,102 @@ header section {
 }
 
 /* Section 7 */
+
 #Section-7 {
-  background-color: #faf8fc;
-  padding: 6rem 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 3rem;
 }
 
-#Section-7 h2 {
-  font-size: 40px;
-  font-weight: 800;
-  color: black;
+#Section-7 h2{
+  
 }
 
-#Section-7 > p {
-  font-size: 20px;
-  font-weight: 500;
-  color: black;
-  margin-bottom: 2rem;
+.carousel-item {
+position: relative;
+height: 288px;
+padding-top: 10rem;
+margin: 0 3rem;
 }
 
-#Section-7 .testimonial-divider {
-  width: 80px;
-  height: 2px;
-  background-color: var(--primary-main);
-  border: none;
-}
-
-#Section-7 .carousel {
-  position: relative;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-#Section-7 .carousel-inner {
-  padding: 0;
-  border-radius: 16px;
-}
-
-#Section-7 .carousel-item {
-  margin: 3rem 2rem;
-  height: 288px;
-  align-items: center;
-  justify-content: center;
-}
-
-#Section-7 .carousel-caption {
-  position: static;
-  padding: 0;
-  color: #000;
-}
-
-#Section-7 img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-}
-
-#Section-7 .carousel-caption h5 {
-  font-size: 20px;
-  font-weight: 700;
-  width: 128px;
-  color: var(--primary-main);
+.carousel-item h5 {
   margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-#Section-7 .carousel-item h5 {
-  color: var(--primary-main);
+    color: #4B296B;
   font-weight: 700;
   font-size: 24px;
 }
 
-#Section-7 .carousel-item p {
-  color: black;
-  font-size: 20px;
+.carousel-item #h5-1 {
+  padding-left: 33rem;
+}
+
+.carousel-item #h5-2 {
+  padding-left: 32rem;
+}
+
+.carousel-item #h5-3 {
+  padding-left: 34rem;
+}
+
+.carousel-item p {
+margin-left: 14rem;
+  text-align: center;
   width: 692px;
   font-weight: 500;
-  margin: 0 auto;
-}
-
-#Section-7 .carousel-control-next {
+  font-size: 20px;
 
 }
+.carousel-item img{
+  position: absolute;
+  bottom: 10rem;
+  left: 34rem;
+} 
+
+#Section-8 button img{
+margin: 1rem;
+width: 64px;
+width: 64px;
+}
+
+
 /* Section 8 */
 #Section-8 {
-  background-color: #DBD4E1;
+  background-color: #dbd4e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
 }
+
+#Section-8 h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+#Section-8 #p-1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 #Section-8 .accordion {
   padding: 5rem;
+  width: 964px;
+  height: 553px;
 }
+
+#Section-8 h3 {
+  padding: 1rem;
+}
+
 @media (max-width: 750px) {
+  .carousel-item h1 {
+    font-size: 28px;
+  }
 
   /* Section 1 */
-
 
   .offcanvas-main {
     max-width: 55%;
@@ -566,21 +565,6 @@ header section {
     text-align: center;
     width: 100%;
   }
-}
-
-@media (max-width: 890px) {
-  .offcanvas-body {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .offcanvas-body li {
-    padding-top: 20px;
-  }
-
-  .offcanvas-body button {
-    margin-top: 20px;
-  }
 
   /* Section 4 */
   #Section-4 {
@@ -674,15 +658,6 @@ header section {
     margin-bottom: 4rem;
   }
 
-  #Section-6 .card {
-    width: 220px;
-  }
-
-  #Section-6 .card p {
-    font-size: 6.87px;
-    word-wrap: break-word;
-  }
-
   /* Section 7 */
   #Section-7 {
     padding: 3rem 1rem;
@@ -692,7 +667,7 @@ header section {
     font-size: 24px;
   }
 
-  #Section-7 > p {
+  #Section-7 p:first-child {
     font-size: 16px;
   }
 
@@ -710,10 +685,55 @@ header section {
     display: none;
   }
 
-  #Section-7 .carousel-item {
-  margin: 3rem 2rem;
-width: ;
-  align-items: center;
-  justify-content: center;
+
+    #Section-7 .carousel-item p{
+font-size: 12px;
+  }
+
+  /* Section 8 */
+
+  #Section-8 {
+    background-color: #dbd4e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  #Section-8 h2 {
+    font-size: 24px;
+  }
+
+  #Section-8 #p-1 {
+    font-size: 12px;
+  }
+
+  #Section-8 .accordion {
+    padding: 0.5rem;
+    width: 330px;
+  }
+
+  #Section-8 h3 {
+    text-align: start;
+    font-size: 12px;
+  }
+
+  #Section-8 .accordion-body p {
+    font-size: 12px;
+  }
 }
+
+@media (max-width: 890px) {
+  .offcanvas-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .offcanvas-body li {
+    padding-top: 20px;
+  }
+
+  .offcanvas-body button {
+    margin-top: 20px;
+  }
 }
