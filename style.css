@@ -59,11 +59,11 @@ header .carousel button {
 }
 
 header .carousel {
-  position: relative;
+
 }
 
 header .carousel-indicators {
-  position: absolute;
+
   top: 500px;
 }
 
@@ -95,7 +95,7 @@ header section {
   color: black;
 }
 
-#div-1 {
+#Section-1 #div-1 {
   margin-top: 80px;
   display: flex;
   align-items: center;
@@ -421,7 +421,7 @@ width: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
 }
 
 #Section-8 h2 {
@@ -445,6 +445,31 @@ width: 64px;
 #Section-8 h3 {
   padding: 1rem;
 }
+
+ /* Footer */
+
+footer {
+  background-color: #261536;
+  color: white;
+  padding: 4rem 0;
+}
+
+footer img {
+  padding-bottom: 1rem;
+}
+ .footer-div {
+display: flex;
+ }
+
+ .footer-test,  .footer-test-2,  .footer-test-3 {
+  flex: 1;
+ }
+
+ .footer-test {
+  padding-right: 1rem;
+ }
+
+
 
 @media (max-width: 750px) {
   .carousel-item h1 {
@@ -521,12 +546,12 @@ width: 64px;
     font-size: 16px;
   }
 
-  #div-1 {
+ #Section-1 #div-1 {
     flex-direction: column;
     gap: 40px;
   }
 
-  #div-2 {
+ #Section-1  #div-2 {
     max-width: 100%;
     text-align: center;
   }
@@ -726,40 +751,11 @@ font-size: 12px;
     padding-bottom: 1rem;
   }
 
-  /* Footer */
+   /* Footer */
 
-footer {
-display: flex;
-gap: 1rem;
-background-color: #261536;
 }
-
-footer #div-1 {
-  display: flex;
-  flex-direction: column;
-}
-
-footer #div-1 img{
-  
-}
-
-footer  #p-1{
-width: 378px;
-font-weight: 500;
-font-size: 20px;
-}
-
-footer h4 {
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-}
-footer p {
-font-weight: 400;
-font-size: 16px;
-}
-}
-
+ 
+/* Tablet */
 
 @media (max-width: 890px) {
   .offcanvas-body {
