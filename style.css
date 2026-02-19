@@ -37,6 +37,8 @@ a {
   align-items: center;
 }
 
+/* Header */
+
 header .carousel h1 {
   font-size: 68px;
   font-weight: 800;
@@ -368,33 +370,33 @@ padding: 3rem;
   
 }
 
-.carousel-item {
+#Section-7 .carousel-item {
 position: relative;
 height: 288px;
 padding-top: 10rem;
 margin: 0 3rem;
 }
 
-.carousel-item h5 {
+#Section-7 .carousel-item h5 {
   margin-bottom: 1rem;
     color: #4B296B;
   font-weight: 700;
   font-size: 24px;
 }
 
-.carousel-item #h5-1 {
+#Section-7 .carousel-item #h5-1 {
   padding-left: 33rem;
 }
 
-.carousel-item #h5-2 {
+#Section-7 .carousel-item #h5-2 {
   padding-left: 32rem;
 }
 
-.carousel-item #h5-3 {
+#Section-7 .carousel-item #h5-3 {
   padding-left: 34rem;
 }
 
-.carousel-item p {
+#Section-7 .carousel-item p {
 margin-left: 14rem;
   text-align: center;
   width: 692px;
@@ -402,11 +404,13 @@ margin-left: 14rem;
   font-size: 20px;
 
 }
-.carousel-item img{
+#Section-7 .carousel-item img{
   position: absolute;
   bottom: 10rem;
   left: 34rem;
 } 
+
+/* Section 8 */
 
 #Section-8 button img{
 margin: 1rem;
@@ -415,7 +419,7 @@ width: 64px;
 }
 
 
-/* Section 8 */
+
 #Section-8 {
   background-color: #dbd4e1;
   display: flex;
@@ -461,6 +465,15 @@ footer img {
 display: flex;
  }
 
+ .footer-test {
+
+ }
+
+ .footer-test p {
+  font-size: 20px;
+  width: 370px;
+ }
+
  .footer-test,  .footer-test-2,  .footer-test-3 {
   flex: 1;
  }
@@ -475,6 +488,14 @@ display: flex;
   .carousel-item h1 {
     font-size: 28px;
   }
+
+  /* Header */
+
+ .header-div h1 {
+  font-size: 28px;
+ }
+
+
 
   /* Section 1 */
 
@@ -590,6 +611,13 @@ display: flex;
     text-align: center;
     width: 100%;
   }
+/* Section 3 */
+
+#Section-3 #div-2 p:first-child {
+  text-align: center;
+}
+
+
 
   /* Section 4 */
   #Section-4 {
@@ -684,35 +712,43 @@ display: flex;
   }
 
   /* Section 7 */
+ /* Section 7 — FIXED */
   #Section-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 3rem 1rem;
+    text-align: center;
   }
 
-  #Section-7 h2 {
-    font-size: 24px;
+  #Section-7 .carousel-item {
+    position: static;        /* FIX */
+    height: auto;            /* FIX */
+    padding-top: 0;          /* FIX */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  #Section-7 p:first-child {
-    font-size: 16px;
+  #Section-7 .carousel-item img {
+    position: static;        /* FIX */
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
   }
 
-  #Section-7 .carousel-caption h5 {
+  #Section-7 .carousel-item h5 {
     font-size: 18px;
+    padding-left: 0;         /* FIX */
   }
 
-  #Section-7 .carousel-caption p {
+  #Section-7 .carousel-item p {
+    margin-left: 0;          /* FIX */
+    width: 100%;
+    max-width: 320px;
     font-size: 14px;
-    padding: 0 1rem;
-  }
-
-  #Section-7 .carousel-control-prev,
-  #Section-7 .carousel-control-next {
-    display: none;
-  }
-
-
-    #Section-7 .carousel-item p{
-font-size: 12px;
+    line-height: 1.6;
   }
 
   /* Section 8 */
@@ -751,8 +787,65 @@ font-size: 12px;
     padding-bottom: 1rem;
   }
 
-   /* Footer */
+   /* Footer - Mobile Fixes */
+  footer {
+    padding: 2.5rem 1rem 2rem 1rem;
+  }
 
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-test,
+  .footer-test-2,
+  .footer-test-3 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-test p {
+    font-size: 1rem;
+    width: 100%;
+    max-width: 320px;
+    margin: 0.75rem 0 0 0;
+  }
+
+  .footer-test-2,
+  .footer-test-3 {
+    flex: 1;
+  }
+
+  .footer-test-2 h4,
+  .footer-test-3 h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-test-2 p,
+  .footer-test-3 p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.9rem;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+
+  .footer-links-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-test-2,
+  .footer-test-3 {
+    min-width: 120px;
+  }
 }
  
 /* Tablet */
