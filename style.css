@@ -712,7 +712,7 @@ display: flex;
   }
 
   /* Section 7 */
- /* Section 7 — FIXED */
+
   #Section-7 {
     display: flex;
     flex-direction: column;
@@ -722,9 +722,9 @@ display: flex;
   }
 
   #Section-7 .carousel-item {
-    position: static;        /* FIX */
-    height: auto;            /* FIX */
-    padding-top: 0;          /* FIX */
+    position: static;        
+    height: auto;          
+    padding-top: 0;    
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -732,7 +732,7 @@ display: flex;
   }
 
   #Section-7 .carousel-item img {
-    position: static;        /* FIX */
+    position: static;        
     width: 80px;
     height: 80px;
     margin-bottom: 1rem;
@@ -740,11 +740,11 @@ display: flex;
 
   #Section-7 .carousel-item h5 {
     font-size: 18px;
-    padding-left: 0;         /* FIX */
+    padding-left: 0;         
   }
 
   #Section-7 .carousel-item p {
-    margin-left: 0;          /* FIX */
+    margin-left: 0;          
     width: 100%;
     max-width: 320px;
     font-size: 14px;
@@ -787,7 +787,7 @@ display: flex;
     padding-bottom: 1rem;
   }
 
-   /* Footer - Mobile Fixes */
+   /* Footer  */
   footer {
     padding: 2.5rem 1rem 2rem 1rem;
   }
