@@ -713,64 +713,55 @@ footer img {
   }
 
   /* Section 7 */
-
   #Section-7 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 3rem 1rem;
     text-align: center;
   }
 
-  /* #Section-7 .carousel-item {         
-    padding-top: 0;    
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
 
-  #Section-7 .carousel-item img {
+  #Section-7 .carousel-inner .carousel-item {
+    height: auto;
+    padding-top: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+
+  #Section-7 .carousel-inner .carousel-item img {
     position: static;
+    left: auto;
+    bottom: auto;
     width: 80px;
     height: 80px;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
+    display: block;
   }
 
-  #Section-7 .carousel-item h5 {
-    font-size: 18px;
+
+  #Section-7 .carousel-inner .carousel-item h5,
+  #Section-7 .carousel-inner .carousel-item #h5-1,
+  #Section-7 .carousel-inner .carousel-item #h5-2,
+  #Section-7 .carousel-inner .carousel-item #h5-3 {
     padding-left: 0;
+    margin-left: 0;
+    font-size: 18px;
   }
 
-  #Section-7 .carousel-item p {
+
+  #Section-7 .carousel-inner .carousel-item p {
+    margin: 0 auto;
     width: 100%;
-    margin-left: 0;
     max-width: 320px;
     font-size: 14px;
+    text-align: center;
   }
 
-  
-#Section-7 .carousel-item #h5-1 {
-margin-left: -10rem;
 
+  #Section-7 .carousel-control-prev,
+  #Section-7 .carousel-control-next {
+    width: 15%;
+  }
 }
-
-#Section-7 .carousel-item #h5-2 {
-
-}
-
-#Section-7 .carousel-item #h5-3 {
-
-}
-
-#Section-7 .carousel-item p {
-
-}
-#Section-7 .carousel-item img {
-  border: 1px solid red;
-  position: absolute;
-}
-
 
   /* Section 8 */
 
